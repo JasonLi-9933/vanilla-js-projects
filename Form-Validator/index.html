@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form class='form-box'>
+        <h3 style="font-family: 'Galada', cursive;">Register Now for More Fun!</h3>
+
+        <div class='input-field'>
+            <label for="first-name">First Name</label>
+            <input type="text" id='first-name' placeholder="First Name">
+            <image src="./icons/finger.png" class='icon'></image>
+            <span class='msg'>Please Enter A Valid First Name</span>
+        </div>
+        
+        <div class='input-field'>
+            <label for="first-name">Last Name</label>
+            <input type="text" id='last-name' placeholder="Last Name">
+            <image src="./icons/finger.png" class='icon'></image>
+            <span class='msg'>Please Enter A Valid Last Name</span>
+        </div>
+        
+        <div class='input-field'>
+            <label for="email">Email</label>
+            <input type="email" id='email' placeholder="Email Address">
+            <image src="./icons/finger.png" class='icon'></image>
+            <span class='msg'>Please Enter a Valid Email Address</span>
+        </div>
+        
+        <div class='input-field'>
+            <label for="password">Password</label>
+            <input type="password" id='password' placeholder="Password">
+            <image src="./icons/finger.png" class='icon'></image>
+            <span class='msg'>Please Enter Your Password</span>
+        </div>
+
+        <div class='input-field'>
+            <label for="confirm">Confirm Your Password</label>
+            <input type="password" id='confirm' placeholder="Confirm Your Password">
+            <image src="./icons/finger.png" class='icon'></image>
+            <span class='msg'>The Password Doesn't Match</span>
+        </div>
+        
+        <button class='btn'>Register</button>
+    </form>
+</body>
+<script src="./index.js"></script>
+</html>

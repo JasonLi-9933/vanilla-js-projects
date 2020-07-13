@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking System</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='choose-movie'>
+            <label for='dropdown'>Pick a movie: </span>
+                <select id="dropdown">
+                    <option value='default' class='default'> --Please choose a movie--</option>
+                    <option value="avenger" class="avenger">Avengers: End Game ($12)</option>
+                    <option value="joker" class="joker">Joker ($8)</option>
+                    <option value="transformer" class="transformer">Avengers: End Game ($10)</option>
+                    <option value="fast" class="fast">Fast and Furious 8($14)</option>
+                </select>
+        </div>
+
+        <div class="seat-status">
+            <div class="status">
+                <span class="NA-icon"></span>
+                <span>N/A</span>
+            </div>
+
+            <div class="status">
+                <span class="selected-icon"></span>
+                <span>Selected</span>
+            </div>
+
+            <div class="status">
+                <span class="occupied-icon"></span>
+                <span>Occupied</span>
+            </div>
+        </div>
+
+        <div class="screen"></div>
+
+        <div class="seats">
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat alley"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied alley"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p class="result">
+            You have booked <span id='quantity'>0</span> tickets.
+            $<span id='total'>0</span> total.
+        </p>
+
+        <button class="btn">Place Order</button>
+    </div>
+
+
+
+</body>
+<script src='./index.js'></script>
+
+</html>
