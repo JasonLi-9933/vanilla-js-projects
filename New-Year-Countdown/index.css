@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    transition-duration: 1s;
+    transition:background-image 1s;
 }
 
 body::after { /* dim the background */
