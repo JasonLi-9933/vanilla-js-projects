@@ -1,0 +1,138 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600;800&display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: 2rem;
+    color:white;
+    background-image: url('./pics/new-year-pic-6.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: background 1s;
+}
+
+body::after { /* dim the background */
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0 ,0, 0, 0.3);
+}
+
+.container, .time, .unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99; /* 'lighten the text */
+}
+
+
+.container, .unit {
+    flex-direction: column;
+}
+
+.container {
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.unit {
+    margin: 0 3vw;
+}
+
+.unit h3 {
+    margin: 1vh 0;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.next-year {
+    opacity: 0.3;
+    color: #e4e3e3;
+    font-size: 12rem;
+    margin: 6px 0;
+}
+=======
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600;800&display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: 2rem;
+    color:white;
+    background-image: url('./pics/new-year-pic-6.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition:background 1s;
+    -webkit-transition:background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+}
+
+body::after { /* dim the background */
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0 ,0, 0, 0.3);
+}
+
+.container, .time, .unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99; /* 'lighten the text */
+}
+
+
+.container, .unit {
+    flex-direction: column;
+}
+
+.container {
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.unit {
+    margin: 0 3vw;
+}
+
+.unit h3 {
+    margin: 1vh 0;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.next-year {
+    opacity: 0.3;
+    color: #e4e3e3;
+    font-size: 12rem;
+    margin: 6px 0;
+}
+>>>>>>> 6a0192de24392b25cb8e9f6375d0458883652a8a
