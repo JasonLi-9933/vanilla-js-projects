@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lato:wght@400;700&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+    margin: 20vh 35vw;
+    font-size: 16px;
+    /* overflow: hidden; */
+}
+
+.input-field, .form-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    position: relative;
+}
+
+.form-box {
+    background-color: #eeeeee;
+    border-radius: 6px;
+    align-items: center;
+    box-shadow: 0 4px 1px -1px #dddddd;
+}
+
+.input-field input {
+    width: 15rem;
+    height: 1.7rem;
+    margin: 0.25rem auto;
+    border-width: 0;
+    border-color: azure;
+    border-radius: 5px;
+    box-shadow: 0 4px 1px -1px #dddddd;
+}
+
+
+.btn {
+    font-size: 16px;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    color:white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #3d72f6, #1ed0a6);
+    opacity: 0.6;
+    border-width: 0;
+    border-radius: 5px;
+    transition: .6s;
+    margin: 8px auto;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to left, #3d72f6, #1ed0a6);
+    opacity: 1;
+}
+
+/* Info Messages */
+.msg {
+    font-size: 12px;
+    font-style: italic;
+    visibility: hidden;
+}
+
+.icon {
+    width:20px;
+    height: 20px;
+    position: absolute;
+    left: 13.5rem;
+    top: 1.8rem;
+    border: 0;
+}
+
+.msg.error {
+    color: #d63447;
+    visibility:visible;
+}
+

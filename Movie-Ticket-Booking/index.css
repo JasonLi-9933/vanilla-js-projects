@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
+
+html, body {
+    font-family: 'Baloo Da 2', cursive;
+}
+
+body {
+    background-color: #120136;
+}
+
+.container {
+    margin: 25vh 35vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.choose-movie, .seat-status, .screen, .seats, .result {
+    margin: 8px 0;
+}
+
+.seat-status {
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.status {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.seat, .NA-icon, .selected-icon, .occupied-icon {
+    height:12px;
+    width:15px;
+    border-radius: 40% 40% 0 0;
+    margin: 6px;
+}
+
+.selected-icon {
+    background-color: white;
+}
+
+.occupied-icon {
+    background-color: #1dd3bd;
+}
+
+/* Screen */
+.screen {
+    background-color: white;
+    height:70px;
+    width: 20vw;
+    margin:15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255,255,255,0.7);
+}
+
+.seat {
+    cursor: pointer;
+}
+
+.seat.occupied {
+    background-color: white;
+}
+
+.seat.selected {
+    background-color: #1dd3bd;
+}
+
+/* Seating Area */
+.seats {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.seat, .NA-icon{
+    background-color: #443451;
+}
+
+
+
+.alley {
+    margin-right: 25px;
+}
+
+.seat:hover {
+    transform: scale(1.3);
+}
+
+/* Result Message */
+
+#quantity, #total {
+    color:#1dd3bd;
+    font-weight: 700;;
+}
+
+.btn {
+    font-family: 'Baloo Da 2', cursive;
+    cursor: pointer;
+    font-size: large;
+    width: 7rem;
+    height: 2rem;
+    color: white;
+    border:0;
+    border-radius: 6px;
+    background-image:linear-gradient(to left, #69F63D, #1E82D0) ;
+    opacity: 0.6;
+    transition-duration: 0.7s;
+}
+
+.btn:hover {
+    background-image:linear-gradient(to left, #69F63D, #1E82D0 );
+    opacity: 1;
+}
