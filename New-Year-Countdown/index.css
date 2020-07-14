@@ -10,8 +10,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    transition:background-image 1s;
-    -webkit-transition:background-image 1s;
+    transition:background 1s;
+    -webkit-transition:background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
 }
 
 body::after { /* dim the background */
