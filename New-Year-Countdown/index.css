@@ -11,6 +11,7 @@ body{
     background-size: cover;
     overflow: hidden;
     transition:background-image 1s;
+    -webkit-transition:background-image 1s;
 }
 
 body::after { /* dim the background */
