@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap');
+
+/* card color:#ffe0f7*/
+body {
+    font-family: 'MuseoModerno', cursive;
+    background-color: #ffe0f7;
+    color: white;
+}
+
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4vh 25vw 0 25vw;
+}
+
+.title {
+    color:#251f44;
+}
+
+input:focus, .post:hover {
+    outline:none;
+    transform: scale(1.1);
+}
+
+.filter-box {
+    font-family: 'MuseoModerno', cursive;
+    width: 100%;
+    height: 5vh;
+    border:0;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin: 2vh 0;
+}
+
+.posts, .post {
+    display:flex;
+    flex-direction: column;
+}
+
+.filter-box, .post {
+    box-shadow: 0 6px 4px -4px #ccc;
+    transition-duration: .6s;
+    justify-content: space-evenly;
+}
+
+.posts {
+    width: 100%;
+}
+
+.post {
+    background-color: #fe91ca;
+    margin: 2vh 0;
+    padding: 12px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px; 
+    position: relative;
+}
+
+.post:nth-child(odd){
+    animation: slideInFromLeft .3s linear 0s 1 normal backwards;
+}
+
+.post:nth-child(even){
+    animation: slideInFromRight .3s linear 0s 1 normal backwards;
+}
+
+.id-box {
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left:-15px;
+    top: -15px;
+    color:#251f44;
+    text-align: center;
+}
+
+.post-title, .post-content {
+    margin: 6px 3px;
+}
+
+.spinners {
+    display: flex;
+    flex-direction: row;
+    margin:3vh 0;
+}
+
+.spinner {
+    content:'';
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    background-color: #251f44;
+    animation-name: flipSquare;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes flipSquare {
+    0% { transform: rotateX(180deg)}
+    50% { transform: rotateY(180deg)}
+    100% { transform: rotateZ(180deg)}
+}
+
+@keyframes slideInFromLeft {
+    0% { 
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-50px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% { 
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(50px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
