@@ -6,6 +6,7 @@ const days = document.querySelector('#days');
 const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
+const year = document.querySelector('p.next-year');
 
 const unitTexts = document.querySelectorAll('.unit-text');
 const spinners = document.querySelectorAll('.spinner');
@@ -49,6 +50,7 @@ function updateTime() {
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
+    year.innerHTML = nextYear;
 }
 
 function convertTime(t) {
